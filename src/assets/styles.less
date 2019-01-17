@@ -1,0 +1,106 @@
+select, option {
+  cursor: pointer;
+}
+
+.full-screen {
+  width: 100%;
+  height: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  min-height: 0;
+}
+
+.flow {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.stretch {
+  flex: 1 1 auto;
+}
+
+.fixed {
+  flex: 0 0 auto;
+}
+
+.fixed-size(@size) {
+  flex: 0 0 @size;
+}
+
+.center-main {
+  justify-content: center;
+}
+
+.center-cross {
+  align-items: center;
+}
+
+.center-both {
+  .center-main;
+  .center-cross;
+}
+
+.centered {
+  margin: auto;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.size(@size) {
+  width: @size;
+  height: @size;
+}
+
+.min-size(@size) {
+  min-width: @size;
+  min-height: @size;
+}
+
+.max-size(@size) {
+  max-width: @size;
+  max-height: @size;
+}
+
+.shadow {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.light-shadow {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 3px 10px 0px rgba(0, 0, 0, 0.19);
+}
+
+.inner-border {
+  box-sizing: border-box;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.button {
+  padding: 0.5rem;
+  border: 1px solid grey;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: lightskyblue;
+  }
+}
